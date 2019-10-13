@@ -1,4 +1,3 @@
-\documentclass[12pt, a4paper, final]{extarticle}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
@@ -7,12 +6,13 @@
 \setmainfont{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
 
+
 \usepackage{polyglossia}
 \setdefaultlanguage{russian}
 \usepackage{csquotes}
+\usepackage{hyperref}
 
 \usepackage{enumerate}
-\usepackage{indentfirst}
 \usepackage{multirow}
 
 \usepackage{chngcntr}
@@ -40,7 +40,6 @@
 
 
 \usepackage{graphicx}
-\graphicspath{{img/}, {/appendix}}
 
 \usepackage[compatibility=false]{caption}
 
@@ -50,13 +49,12 @@
 \mhchemoptions{layout=stacked}
 
 \usepackage{siunitx}
-\input{siunitx.cfg}
 
 \usepackage{chemstyle}
 \counterwithin{scheme}{section}
 \renewcommand{\schemename}{Схема}
 
-\usepackage{chemfig}
+% \usepackage{chemfig}
 
 \usepackage{bpchem}
 
@@ -64,12 +62,15 @@
 
 \renewcommand{\theBPCno}{\arabic{BPCno}}
 
-\usepackage{titlesec}
-\titleformat*{\section}{\centering\large\bfseries}
-\titleformat*{\subsection}{\centering\normalsize\bfseries}
 
 \renewcommand{\thesubfigure}{\asbuk{subfigure})}
 
 
-\usepackage{multirow}
 \usepackage{colortbl}
+
+\usepackage[subfigure]{tocloft}
+\renewcommand{\cftsecleader}{\bfseries\cftdotfill{\cftdotsep}}
+\usepackage{titlesec}
+\titleformat*{\section}{\centering\large\bfseries}
+\titleformat*{\subsection}{\centering\normalsize\bfseries}
+
