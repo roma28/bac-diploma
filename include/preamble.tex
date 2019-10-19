@@ -16,8 +16,8 @@
 \usepackage{multirow}
 
 \usepackage{chngcntr}
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
+\counterwithin{figure}{subsection}
+\counterwithin{table}{subsection}
 
 \renewcommand{\baselinestretch}{1.4}
 \usepackage{indentfirst}
@@ -34,8 +34,11 @@
 \geometry{bottom=2cm}
 
 
-\usepackage[style=gost-numeric-min, sorting=none]{biblatex}
+
+\usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=short]{biblatex}
 \addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
 
 
 
@@ -51,7 +54,7 @@
 \usepackage{siunitx}
 
 \usepackage{chemstyle}
-\counterwithin{scheme}{section}
+\counterwithin{scheme}{subsection}
 \renewcommand{\schemename}{Схема}
 
 % \usepackage{chemfig}
@@ -74,3 +77,4 @@
 \titleformat*{\section}{\centering\large\bfseries}
 \titleformat*{\subsection}{\centering\normalsize\bfseries}
 
+% \usepackage{acro}
