@@ -2,15 +2,21 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
+
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
 
 
-\usepackage{polyglossia}
-\setdefaultlanguage{russian}
+% \usepackage{polyglossia}
+% \setdefaultlanguage{russian}
+\usepackage[main=russian, english]{babel}
+
 \usepackage{csquotes}
-\usepackage{hyperref}
+
+\usepackage{acro}
+% \input{acro.sty}
+
 
 \usepackage{enumerate}
 \usepackage{multirow}
@@ -77,4 +83,4 @@
 \titleformat*{\section}{\centering\large\bfseries}
 \titleformat*{\subsection}{\centering\normalsize\bfseries}
 
-% \usepackage{acro}
+\usepackage{hyperref}
