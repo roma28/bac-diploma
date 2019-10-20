@@ -23,5 +23,5 @@ sections/results/results.aux
 sections/literature/literature.tex.aux
 sections/results/results.tex.aux
 main.out
-include/loa.aux
 include/acronyms.aux
+include/loa.aux
