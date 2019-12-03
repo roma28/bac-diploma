@@ -2,7 +2,6 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
-
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
@@ -53,7 +52,7 @@
 
 \usepackage{graphicx}
 
-\usepackage[compatibility=false]{caption}
+\usepackage[compatibility=false, justification=centering]{caption}
 
 
 
@@ -61,15 +60,16 @@
 \mhchemoptions{layout=stacked}
 
 \usepackage{siunitx}
+% \usepackage{chemmacros}
 
 \usepackage{chemstyle}
 \counterwithin{scheme}{subsection}
 \renewcommand{\schemename}{Схема}
 
-% \usepackage{chemfig}
+\usepackage{chemnum}
+\usepackage{chemfig}
 
 \usepackage{bpchem}
-
 \usepackage{subfigure}
 
 \renewcommand{\theBPCno}{\arabic{BPCno}}
@@ -85,7 +85,15 @@
 \usepackage{titlesec}
 \titleformat*{\section}{\centering\large\bfseries}
 \titleformat*{\subsection}{\centering\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\itshape}
 
 \usepackage{hyperref}
-
+% \marginpar[3cm]{1cm}
+\setlength{\marginparwidth}{2.5cm}
 \usepackage{todonotes}
+
+% \renewcommand{\thesubsubsection}{}
+\setcounter{tocdepth}{2}
+\reversemarginpar{}
+
+\usepackage[percent]{overpic}
