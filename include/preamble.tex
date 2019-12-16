@@ -10,6 +10,8 @@
 % \usepackage{polyglossia}
 % \setdefaultlanguage{russian}
 \usepackage[main=russian, english]{babel}
+% \let\ch\undefined
+
 
 \usepackage{csquotes}
 
@@ -55,26 +57,23 @@
 \usepackage[compatibility=false, justification=centering]{caption}
 
 
+\usepackage{chemmacros}
 
 \usepackage[version=4]{mhchem}
 \mhchemoptions{layout=stacked}
+\chemsetup{formula = mhchem}
+\chemsetup{modules=all}
 
 \usepackage{siunitx}
-% \usepackage{chemmacros}
 
 \usepackage{chemstyle}
 \counterwithin{scheme}{subsection}
 \renewcommand{\schemename}{Схема}
 
 \usepackage{chemnum}
-\usepackage{chemfig}
+% \chemsetup{modules=all}
 
-\usepackage{bpchem}
 \usepackage{subfigure}
-
-\renewcommand{\theBPCno}{\arabic{BPCno}}
-
-
 \renewcommand{\thesubfigure}{\asbuk{subfigure})}
 
 
