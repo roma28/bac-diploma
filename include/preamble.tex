@@ -7,9 +7,9 @@
 \newfontfamily\cyrillicfont{Times New Roman}
 
 
-% \usepackage{polyglossia}
-% \setdefaultlanguage{russian}
-\usepackage[main=russian, english]{babel}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+% \usepackage[main=russian, english]{babel}
 % \let\ch\undefined
 
 
@@ -48,8 +48,8 @@
 
 
 \usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=short]{biblatex}
-% \addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
-\addbibresource{include/bibliography.bib}
+\addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
+% \addbibresource{include/bibliography.bib}
 
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryCitekey{\clearfield{month}}
@@ -94,7 +94,7 @@
 \usepackage[hidelinks]{hyperref}
 % \marginpar[3cm]{1cm}
 \setlength{\marginparwidth}{2.5cm}
-\usepackage[disable]{todonotes}
+\usepackage{todonotes}
 
 % \renewcommand{\thesubsubsection}{}
 \setcounter{tocdepth}{3}
@@ -102,3 +102,9 @@
 
 \usepackage[percent]{overpic}
 \usepackage{placeins}
+
+\usepackage[title, titletoc]{appendix}
+
+\usepackage{pdflscape}
+
+\usepackage[figuresright]{rotating}
