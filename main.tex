@@ -1,13 +1,14 @@
 \documentclass[12pt, a4paper, final]{extarticle}
 
 \input{include/preamble.tex}
-\input{include/siunitx.cfg}
+\input{include/siunitx.tex}
 \input{include/acronyms.tex}
 
 \begin{document}
     \includepdf{include/titul_bac.pdf}
 
     \include{include/toc}
+    \include{include/loa}
 
     \include{sections/introduction/introduction}
     \include{sections/literature/literature}
@@ -16,6 +17,5 @@
     \include{sections/conclusion/conclusion}
     \include{appendix/appendix}
 
-    \include{include/loa}
     \include{include/bibliography}
 \end{document}
