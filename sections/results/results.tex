@@ -16,7 +16,8 @@
         \put(82, 7){\cmpd{decafluoropyrazoline}}
         \put(22, 8){\cmpd{decafluoropyrazoline_CHO}}
     \end{overpic}
-    \caption{Синтез декафторпиразолина}
+    % \caption{Синтез декафторпиразолина}
+    \caption{}
     \label{sch:decafluoropyrazoline_synthesis}
 \end{scheme}
 
@@ -24,7 +25,7 @@
 
 \subsection{\nohyphens{Взаимодействие формилированного декафтортриарилпиразолина с бинуклеофилами}}
 
-Далее атом фтора в \emph{пара}-положении обоих колец замещали на бифункциональный нулеофил: 4-гидроксипиперидин или пиперазин~(\ref{sch:decafluoropyrazoline_substitution}).
+Далее атом фтора в \emph{пара}-положении обоих колец замещали на бифункциональный нуклеофил: 4-гидроксипиперидин или пиперазин~(\ref{sch:decafluoropyrazoline_substitution}).
 При~\SI{60}{\celsius} реакция замещения фтора в обеих пентафторфенильных группах на остатки 4-гидроксипиперидина не идет до конца, в смеси присутствует примесь исходного соединения. Поэтому реакционную смесь выдерживали при~\SI{100}{\celsius}. Из реакционной смеси были выделены два соединения~--- целевой альдегид с двумя гидроксипиперидиновыми остатками и альдегид, содержащий в одном из колец диметиламиногруппу. Положение диметиламиногруппы было установлено реакцией альдегида~\cmpd{decafluoropyrazoline_CHO} с недостатком 4-гидроксипиперидина, при которой незамещенным и, следовательно, менее реакционноспособным оказалось перфторфенильное кольцо в положении 5. \todo{РСА}
 
 
@@ -44,7 +45,7 @@
     \label{sch:decafluoropyrazoline_substitution}
 \end{scheme}
 
-Первоначально пиперазин вводили в тех же условиях, что и 4-гидроксипиперидин при этом из реакционной смеси был выделен только продукт олигомеризации (сшивки) по пиперазиновым группам. При проведении реакции при температуре \SI{80}{\celsius} и десятикратном избытке пиперазина в реакционной смеси удается выделить продукт замещения обоих атомов фтора на остатки пиперазина в смеси с, предположительно, продуктом замещения одного из атомов фтора на диметиламиногруппу, аналогично реакции с 4-гидроксипиперидином.
+Первоначально пиперазин вводили в тех же условиях, что и 4-гидроксипиперидин при этом из реакционной смеси был выделен только продукт олигомеризации (сшивки) по пиперазиновым группам. При проведении реакции при температуре \SI{80}{\celsius} и десятикратном избытке пиперазина в реакционной смеси удается выделить продукт замещения обоих атомов фтора на остатки пиперазина в смеси с, предположительно, продуктом замещения одного из атомов фтора на диметиламиногруппу, аналогично реакции с 4-гидроксипиперидином. \todo{уточнить}
 
 \begin{scheme}
     \begin{overpic}{sections/results/img/oligo.eps}
@@ -55,7 +56,7 @@
 \end{scheme}
 
 
-\subsection{Введение разделительного блока}
+\subsection{Методика введения разделительного блока}
 После этого гидроксигруппу альдегида~\cmpd{decafluoropyrazoline_substituted.piperidine} ацилировали хлористым бензоилом~(\ref{sch:ac_cond}).
 Были испытаны два подхода: бензоилирование большим избытком хлористого бензоила  и бензоилирование с катализом~\ac{dmap} и стехиометрическим количеством  хлористого бензоила.
 В результате было обнаружено, что использование~\ac{dmap} позволяет сократить время реакции с 6--8 часов до 2 в случае хлористого бензоила и требует гораздо меньшего избытка хлорангидрида~(1.25~экв. против 3~экв. при проведении реакции без катализатора).
@@ -75,10 +76,6 @@
 
 Также мы исследовали альтернативную последовательность реакций: конденсацию альдегида~\cmpd{decafluoropyrazoline_substituted.piperidine} с дицианоизофороном и последующее ацилирование полученного \mbox{\ce{OH}-красителя}~\cmpd{decafluoropyrazoline_DCIF.piperidine}~(\ref{sch:cond_ac}).
 
-При сопоставимых выходах на стадии ацилирования более выгодным является подход с конденсацией и последующим ацилированием, поскольку он позволяет использовать меньшее количество хлорангидрида, получение которого представляется собой значительную сложность. В итоге оптимизированная последовательность реакций и методика ацилирования позволила снизить требуемое количество ацилирующего реагента.
-
-Мы обнаружили, что при длительной выдержке реакционной смеси вместо пиразолина~\cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl} образуется соответствующий пиразол.
-На образование пиразола указывает отсутствие в \ce{^1H} ЯМР спектре сигналов \emph{ABX}-системы пиразолина и отсутствие в спектре \ce{^19F} уширенного синглета.
 
 \begin{scheme}[ht]
     \centering
@@ -93,14 +90,42 @@
     \label{sch:cond_ac}
 \end{scheme}
 
-Также мы наблюдали окисление пиразолина в пиразол даже при кратковременной выдержке в темноте в хлорированных растворителях~(\ce{CH2Cl2} и \ce{CDCl3}).
+При сопоставимых выходах на стадии ацилирования более выгодным является подход с конденсацией и последующим ацилированием, поскольку он позволяет использовать меньшее количество хлорангидрида, получение которого представляется собой значительную сложность. В итоге оптимизированная последовательность реакций и методика ацилирования позволила снизить требуемое количество ацилирующего реагента и повысить выход~(для соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.benzoyl} без катализатора выход составляет 6--\SI{15}{\percent}~\cite{2019}).
+
+\begin{table}[]
+    \centering
+    \caption{}
+    \label{tab:acylation_bis}
+    \begin{small}
+        \begin{threeparttable}
+            \begin{tabular}{cccccccc}
+                \toprule{}
+                \textbf{№} & \textbf{Субстрат}                                  & \textbf{\thead{Экв.                                                                                                       \\реагента}} & \textbf{Продукт}                                     & \textbf{Условия}                    & \textbf{\makecell{Время\\реакции,~ч}} & \textbf{Выход, \%} \\
+                \midrule
+                1          & \cmpd{decafluoropyrazoline_substituted.piperidine} & 6                   & \cmpd{decafluoropyrazoline_piperidine_benzoyl}      & \ce{PhH}, \ce{NEt3}                 & 24 & 74 \\
+                2          & \cmpd{decafluoropyrazoline_substituted.piperidine} & 2.5                 & \cmpd{decafluoropyrazoline_piperidine_benzoyl}      & \ce{PhH}, \ce{NEt3}, \ac{dmap}      & 6  & 74 \\
+                3          & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl} & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 2  & 25 \\
+                4          & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.TAFS}    & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 2  & 30 \\
+                5          & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.TATBS}   & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 6  & 55 \\
+                \bottomrule
+            \end{tabular}
+        \end{threeparttable}
+    \end{small}
+\end{table}
+
+В спектре ЯМР \ce{^1H} соединения \cmpd{{decafluoropyrazoline_DCIF.piperidine}} характеристическими являются сигналы \emph{AB}-системы двойной связи с \ac{J} около \SI{15}{\hertz}, что указывает на \emph{E}-конфигурацию двойной связи, синглет при \SI{6.72}{\ppm}, соответствующий протону при двойной связи дицианоизофорона, два синглета при 2.61 и \SI{2.55}{\ppm}, принадлежащих \ce{CH2} группам дицианоизофорона и синглет при \SI{1.04}{\ppm}, принадлежащий двум метильными группам дицианоизофорона.
+
+Мы обнаружили, что в реакции бензоилирования~\cmpd{decafluoropyrazoline_DCIF.piperidine} при длительной выдержке реакционной смеси вместо пиразолина~\cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl} образуется соответствующий пиразол.
+На образование пиразола указывает отсутствие в \ce{^1H} ЯМР спектре сигналов \emph{ABX}-системы пиразолина и отсутствие в спектре \ce{^19F} уширенного синглета.
+
+Также мы наблюдали окисление пиразолина~\cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl} в пиразол даже при кратковременной выдержке в темноте в хлорированных растворителях~(\ce{CH2Cl2} и \ce{CDCl3}).
 При этом для предшественника соединения~\cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl}~--- альдегида~\cmpd{decafluoropyrazoline_substituted.piperidine} окисления не наблюдалось даже при длительной выдержке в хлороформе на свету.
 Это может быть связано с предполагаемым механизмом окисления~(\ref{sch:light_oxidation} на стр.\,\pageref{sch:light_oxidation}); введение в молекулу акцептора упрощает образование цвиттерионной структуры, играющей ключевую роль в процессе окисления.
 Таким образом, наилучшая стратегия при синтезе и очистке производных альдегида~\cmpd{decafluoropyrazoline_substituted.piperidine}~--- избегать хлорсодержащих растворителей.\todo{как-то криво}
 
-В спектре ЯМР \ce{^1H} соединения \cmpd{{decafluoropyrazoline_DCIF.piperidine}} характеристическими являются сигналы \emph{AB}-системы двойной связи с \ac{J} около \SI{15}{\hertz}, что указывает на \emph{E}-конфигурацию двойной связи, синглет при \SI{6.72}{\ppm}, соответствующий протону при двойной связи дицианоизофорона, два синглета при 2.61 и \SI{2.55}{\ppm}, принадлежащих \ce{CH2} группам дицианоизофорона и синглет при \SI{1.04}{\ppm}, принадлежащий двум метильными группам дицианоизофорона.
+\subsection{Синтез красителей}
 
-По оптимизированной методике~(\ref{sch:cond_ac}) мы синтезировали производные соединений~\cmpd{decafluoropyrazoline_DCIF.piperidine} и~\cmpd{pentafluoropyrazoline_DCIF.piperidine}\todo{Написать?} с разделительными блоками~(\ref{fig:dendroids})~--- эфиры \cmpd{decafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS}} и  \cmpd{pentafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS, MATBS}}.
+По оптимизированной методике~(\ref{sch:cond_ac}) мы синтезировали производные соединений~\cmpd{decafluoropyrazoline_DCIF.piperidine} и~\cmpd{pentafluoropyrazoline_DCIF.piperidine}\todo{Написать?} с разделительными блоками~(\ref{fig:dendroids})~--- эфиры~\cmpd{decafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS}} и~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS, MATBS}}.
 В целом, реакция ацилирования идет достаточно быстро и с хорошим выходом~(\ref{tab:acylation_bis}, \ref{tab:acylation_mono}), однако в случае соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.MATBS} выход продукта составляет всего \SI{7.5}{\percent}.
 
 \begin{figure}
@@ -113,29 +138,6 @@
 
 Это может быть связано с тем, что хлорангидрид является стерически затрудненным, а следовательно, затруднен подход OH-группы к карбонильной группе.
 Для получения соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.MATBS} мы использовали несколько вариаций общей методики: увеличение времени реакции, замена растворителя с бензола на ацетонитрил, проведение реакции при повышенной температуре с нагревом микроволновым излучением, однако это не привело к повышению выхода.
-
-В качестве альтернативных способов получения целевых эфиров мы также исследовали реакцию Мицунобу и реакцию Штеглиха~(взаимодействие спирта с кислотой в присутсвтвие \ac{dcc} и \ac{dmap})\todo{написать}.
-
-\begin{table}[]
-    \centering
-    \caption{}
-    \label{tab:acylation_bis}
-    \begin{small}
-        \begin{threeparttable}
-            \begin{tabular}{cccccccc}
-                \toprule{}
-                \textbf{№} & \textbf{Реагент} & \textbf{Субстрат}                                  & \textbf{\thead{Экв.                                                                                                       \\реагента}} & \textbf{Продукт}                                     & \textbf{Условия}                    & \textbf{\makecell{Время\\реакции,~ч}} & \textbf{Выход, \%} \\
-                \midrule
-                1          & \ce{PhCOCl}      & \cmpd{decafluoropyrazoline_substituted.piperidine} & 6                   & \cmpd{decafluoropyrazoline_piperidine_benzoyl}      & \ce{PhH}, \ce{NEt3}                 & 24 & 74 \\
-                2          & \ce{PhCOCl}      & \cmpd{decafluoropyrazoline_substituted.piperidine} & 2.5                 & \cmpd{decafluoropyrazoline_piperidine_benzoyl}      & \ce{PhH}, \ce{NEt3}, \ac{dmap}      & 6  & 74 \\
-                3          & \ce{PhCOCl}      & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl} & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 2  & 25 \\
-                4          & \ce{TAFS-Cl}     & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.TAFS}    & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 2  & 30 \\
-                5          & \ce{TATBS-Cl}    & \cmpd{decafluoropyrazoline_DCIF.piperidine}        & 3                   & \cmpd{decafluoropyrazoline_piperidine_DCIF.TATBS}   & \ce{PhH}, \ce{NEt3},      \ac{dmap} & 6  & 55 \\
-                \bottomrule
-            \end{tabular}
-        \end{threeparttable}
-    \end{small}
-\end{table}
 
 \begin{table}[]
     \centering
@@ -163,7 +165,10 @@
         \end{threeparttable}
     \end{small}
 \end{table}
-\FloatBarrier
+
+Так же на то, что реакция проходит не до конца, указывает получение при очистке реакционной смеси желтой фракции, содержащей по данным ЯМР- и ИК-спектроскопии смесь исходного хлорангидрида и соответствующий кислоты.
+
+В качестве альтернативных способов получения целевых эфиров мы также исследовали реакцию Мицунобу и реакцию Штеглиха~(взаимодействие спирта с кислотой в присутствим \ac{dcc} и \ac{dmap})\todo{написать}. Реакция Мицунобу позволяет получать эфиры из спиртов и карбоновых кислот в присутствим диизопропилазодикарбоксилата~(\ac{diad}) и трифенилфосфина. Применение этой реакции для получения соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.TATBS} позволило еще больше снизить требуемое количество ацилирующего реагента~(в реакции Мицунобу он берется эквимолярно) и получить целевое соединение с даже большим выходом, чем при ацилировании с помощью хлорангидрида.
 
 Соединения имеют максимум поглощения на длине волны 490--\SI{500}{\nano\metre} в ацетоне, который не зависит от структуры введеного разделительного блока, поскольку тот не включен в цепь сопряжения~(\ref{fig:1OH-UV}).
 \begin{figure}
@@ -191,5 +196,7 @@
     \includegraphics[width = 0.5\textwidth]{sections/results/img/Graph3 - Copy.pdf}
     \caption{Спектры флуоресценции~(сплошная линия) и возбуждения флуоресценции~(пунктирная линия) соединения~\cmpd{decafluoropyrazoline_piperidine_DCIF.TAFS}}
 \end{figure}
+
+В спектрах ЯМР~\ce{^1H} соединений~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{TAFS, TATBS, MATBS}} наблюдается сигнал около \SI{4.2}{\ppm}, соответствующий \ce{S-CH2} фрагменту разделительного блока и сигналы около \SI{2.5}{\ppm}, соответствующие ароматическим метильным группам. Для соединений~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{TATBS, MATBS}} при \SI{1.2}{\ppm} в спектре присутствует сигнал \emph{трет}-бутильной группы. Ароматические протоны основного \todo{подобрать слово} кольца в соединениях \cmpd{pentafluoropyrazoline_piperidine_DCIF.{TAFS, TATBS}} проявляются в виде синглета при 7.7--\SI{7.8}{\ppm}. В спектрах соединений~\cmpd{decafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS}} описанные сигналы выглядят как дублеты из-за неэквивалентности двух заместителей. Спектры \ce{^19F} соединений~\cmpd{decafluoropyrazoline_piperidine_DCIF.{TAFS}} и~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{TAFS}} соответствуют структуре TAFS-фрагмента.
 
 % \subsection{Красители с остатком пиперазина}
