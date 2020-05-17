@@ -50,9 +50,10 @@
 
 
 
-\usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=short]{biblatex}
+\usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=year]{biblatex}
 \addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
 % \addbibresource{include/bibliography.bib}
+\renewcommand{\multicitedelim}{, }
 
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryCitekey{\clearfield{month}}
@@ -97,6 +98,7 @@
 \usepackage[hidelinks]{hyperref}
 \setlength{\marginparwidth}{2.5cm}
 \usepackage{todonotes}
+% \usepackage[disable]{todonotes}
 
 \setcounter{tocdepth}{2}
 \reversemarginpar{}
