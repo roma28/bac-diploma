@@ -1,6 +1,6 @@
 \section{Результаты и обсуждение}
-
-Ранее было показано~\cite{2019, Shelkovnikov2019}, что формильные производные триарилпиразолинов, содержащих полифторфенильные остатки в положениях 5 или 3 пиразолинового цикла, могут служить эффективными донорами в синтезе сопряженных донорно-акцепторных хромофоров с поглощением при 720--760~нм.
+\resetcmpd{}
+Ранее было показано~\cite{2019, 2019b}, что формильные производные триарилпиразолинов, содержащих полифторфенильные остатки в положениях 5 или 3 пиразолинового цикла, могут служить эффективными донорами в синтезе сопряженных донорно-акцепторных хромофоров с поглощением при 720--760~нм.
 В развитие этой тематики была поставлена задача синтеза Д-А хромофоров c использованием декафторзамещенных производных триарилпиразолина. Наличие двух пентафторфенильных групп дает дополнительные возможности для модификации донорного фрагмента.
 
 Альдегид~\cmpd{decafluoropyrazoline_CHO} был наработан по литературной методике~\cite{2016a,2010}.
@@ -93,7 +93,12 @@
 
 \begin{scheme}[h!]
     \centering
-    \includegraphics{sections/results/img/acylation.eps}
+    \begin{overpic}{sections/results/img/acylation.eps}
+        \put(57, 69.5){\cmpd{decafluoropyrazoline_substituted.piperidine}}
+        \put(17, 55){\cmpd{decafluoropyrazoline_DCIF.piperidine}}
+        \put(83, 55){\cmpd{decafluoropyrazoline_piperidine_benzoyl}}
+        \put(43, 9){\cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl}}
+    \end{overpic}
     \caption{}
     \label{sch:acylation}
 \end{scheme}
@@ -120,6 +125,8 @@
 \begin{scheme}[h!]
     \centering
     \begin{overpic}{sections/results/img/cond_ac.eps}
+        \put(21.5, 58.1){\cmpd{decafluoropyrazoline_DCIF.piperidine}}
+        \put(47, 58.1){\cmpd{decafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS}}}
         \put(23, 8){\cmpd{pentafluoropyrazoline_DCIF.piperidine}}
         \put(76, 6){\cmpd{pentafluoropyrazoline_piperidine_DCIF.{benzoyl, TAFS, TATBS, IDATBS}}}
     \end{overpic}
@@ -139,7 +146,7 @@
                 \midrule{}
                 \cmpd{decafluoropyrazoline_substituted.piperidine} & \ce{PhCOCl}    & 6           & \ce{PhH}, \ce{Et3N}             & 24           & \cmpd{decafluoropyrazoline_piperidine_benzoyl}       & 74  \\
                 \cmpd{decafluoropyrazoline_substituted.piperidine} & \ce{PhCOCl}    & 2.5         & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 6            & \cmpd{decafluoropyrazoline_piperidine_benzoyl}       & 74  \\
-                \cmpd{decafluoropyrazoline_DCIF.piperidine}        & \ce{PhCOCl}    & 3           & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 2            & \cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl}  & 25  \\
+                \cmpd{decafluoropyrazoline_DCIF.piperidine}        & \ce{PhCOCl}    & 3           & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 1            & \cmpd{decafluoropyrazoline_piperidine_DCIF.benzoyl}  & 25  \\
                 \cmpd{decafluoropyrazoline_DCIF.piperidine}        & \ce{TAFS-Cl}   & 3           & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 2            & \cmpd{decafluoropyrazoline_piperidine_DCIF.TAFS}     & 30  \\
                 \cmpd{decafluoropyrazoline_DCIF.piperidine}        & \ce{TATBS-Cl}  & 3           & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 6            & \cmpd{decafluoropyrazoline_piperidine_DCIF.TATBS}    & 55  \\
                 \cmpd{pentafluoropyrazoline_DCIF.piperidine}       & \ce{PhCOCl}    & 1.5         & \ce{PhH}, \ce{Et3N}, \ac{dmap}  & 4            & \cmpd{pentafluoropyrazoline_piperidine_DCIF.benzoyl} & 92  \\
@@ -166,17 +173,18 @@
 Также на то, что реакция проходит не до конца, указывает получение при очистке реакционной смеси желтой фракции, содержащей по данным ЯМР- и ИК-спектроскопии смесь исходного хлорангидрида и соответствующий кислоты.
 
 В качестве альтернативных способов получения целевых эфиров мы также исследовали реакцию Мицунобу и реакцию Штеглиха~(взаимодействие спирта с кислотой в присутствим \ac{dcc} и \ac{dmap})\todo{написать}.
-Реакция Мицунобу позволяет получать эфиры из спиртов и карбоновых кислот в присутствим диизопропилазодикарбоксилата~(\ac{diad}) и трифенилфосфина.Применение этой реакции для получения соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.TATBS} позволило еще больше снизить требуемое количество ацилирующего реагента~(в реакции Мицунобу он берется эквимолярно) и получить целевое соединение с даже большим выходом, чем при ацилировании с помощью хлорангидрида.
+Реакция Мицунобу позволяет получать эфиры из спиртов и карбоновых кислот в присутствим диизопропилазодикарбоксилата~(\ac{diad}) и трифенилфосфина.
+Применение этой реакции для получения соединения~\cmpd{pentafluoropyrazoline_piperidine_DCIF.TATBS} позволило еще больше снизить требуемое количество ацилирующего реагента~(в реакции Мицунобу он берется эквимолярно) и получить целевое соединение с даже большим выходом, чем при ацилировании с помощью хлорангидрида.
 
-% \begin{scheme}
-%     \centering
-%     \begin{overpic}{sections/results/img/mitsunobu.eps}
-%         \put(10, 42.5){\cmpd{pentafluoropyrazoline_DCIF.piperidine}}
-%         \put(91, 42.5){\cmpd{pentafluoropyrazoline_piperidine_DCIF.TATBS}}
-%     \end{overpic}
-%     \caption{}
-%     \label{sch:mitsunobu}
-% \end{scheme}
+\begin{scheme}
+    \centering
+    \begin{overpic}{sections/results/img/mitsunobu.eps}
+        \put(10, 42.5){\cmpd{pentafluoropyrazoline_DCIF.piperidine}}
+        \put(91, 42.5){\cmpd{pentafluoropyrazoline_piperidine_DCIF.TATBS}}
+    \end{overpic}
+    \caption{}
+    \label{sch:mitsunobu}
+\end{scheme}
 
 В спектрах ЯМР~\ce{^1H} соединений~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{TAFS, TATBS, IDATBS}} наблюдается сигнал около \SI{4.2}{\ppm}, соответствующий \ce{S-CH2} фрагменту разделительного блока и сигналы около \SI{2.5}{\ppm}, принадлежащие метильным группам в ароматическом кольце.
 В спектрах соединений~\cmpd{pentafluoropyrazoline_piperidine_DCIF.{TATBS, IDATBS}} присутствует сигнал \emph{трет}-бутильной группы при \SI{1.2}{\ppm}. Ароматические протоны основного \todo{подобрать слово} кольца в соединениях \cmpd{pentafluoropyrazoline_piperidine_DCIF.{TAFS, TATBS}} проявляются в виде синглета при 7.7--\SI{7.8}{\ppm}.
