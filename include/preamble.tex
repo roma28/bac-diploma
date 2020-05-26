@@ -41,6 +41,7 @@
 \sloppy
 \clubpenalty=10000
 \widowpenalty=10000
+\brokenpenalty=10000
 
 \usepackage{geometry}
 \geometry{left=3cm}
@@ -54,6 +55,8 @@
 \addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
 % \addbibresource{include/bibliography.bib}
 \renewcommand{\multicitedelim}{, }
+
+\DefineBibliographyExtras{russian}{\renewcommand{\bibrangedash}{\,--\,}}
 
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryCitekey{\clearfield{month}}
