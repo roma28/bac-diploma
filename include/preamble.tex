@@ -53,12 +53,19 @@
 
 
 
-\usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=year]{biblatex}
-\addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
+\usepackage[style=gost-numeric-min, sorting=none, date=year, alldates=year, urldate=year, autolang=other, maxnames=3, minnames=3]{biblatex}
+% \addbibresource{/Users/romanishchenko/Yandex.Disk.localized/BiBTeX/library.bib}
 % \addbibresource{include/bibliography.bib}
+\addbibresource{include/library.bib}
+
 \renewcommand{\multicitedelim}{, }
 
 \DefineBibliographyExtras{russian}{\renewcommand{\bibrangedash}{\,--\,}}
+\DefineBibliographyExtras{english}{\renewcommand{\bibrangedash}{\,--\,}}
+
+\DefineBibliographyStrings{english}{number = {№}, jourvol = {V. }}
+
+
 
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryCitekey{\clearfield{month}}
@@ -127,4 +134,6 @@
 % \usepackage{longtable}
 
 \usepackage{hyphenat}
+
+\usepackage{float}
 
